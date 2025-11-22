@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Result Dashboard</h1>
+
+    <div class="container">
+       
+        <div class="form-section">
+            <h2>Add Student</h2>
+            <input type="text" placeholder="Student Name" id="nameInput">
+            <input type="number" placeholder="Marks (0-100)" id="marksInput">
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <div class="table-section">
+            <h2>Student Lists</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTable">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="summary-section">
+            <h2>Summary</h2>
+            <p id="avgResult">Average Marks : - </p>
+            <p id="topperResult">Topper : -</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
